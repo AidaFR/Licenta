@@ -184,7 +184,7 @@ def log_images(imgs, labels, label, writer, step=0):
 class StrokeParametersToImage(nn.Module):
     def __init__(self, h, w):
         super(StrokeParametersToImage, self).__init__()
-        nh = 20#100
+        nh = 100#100
         self.nc = 20#100
         self.size = 64
         self.main = nn.Sequential(
